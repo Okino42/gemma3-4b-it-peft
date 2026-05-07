@@ -1,0 +1,11 @@
+model_name: gemma-3-4b-med-lora-s2
+predictions: outputs/gemma-3-4b-med-lora-s2/predictions.jsonl
+metrics: outputs/gemma-3-4b-med-lora-s2/metrics.json
+accuracy: 0.427444 (1788/4183)
+precision_macro: 0.447069
+recall_macro: 0.398219
+f1_macro: 0.391745
+precision_weighted: 0.446497
+recall_weighted: 0.427444
+f1_weighted: 0.403703
+unparsed: 0

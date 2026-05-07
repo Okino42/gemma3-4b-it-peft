@@ -1,0 +1,10 @@
+huggingface_hub
+pandas
+pyarrow
+PyYAML
+tqdm
+torch
+transformers
+peft
+bitsandbytes
+accelerate

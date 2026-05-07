@@ -1,0 +1,46 @@
+2026-04-17 16:20:38 | INFO | __main__ | Loading dataset from data/validation-00000-of-00001.parquet
+2026-04-17 16:20:38 | INFO | __main__ | Loading tokenizer from /projects/checkpoint/gemma-3-4b-med-dora-s2
+Traceback (most recent call last):
+  File "/projects/_hdd/checkpoint/medmcqa_eval/eval_medmcqa.py", line 419, in <module>
+    main()
+    ~~~~^^
+  File "/projects/_hdd/checkpoint/medmcqa_eval/eval_medmcqa.py", line 349, in main
+    tokenizer, model = load_tokenizer_and_model(model_cfg, loading_cfg)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/_hdd/checkpoint/medmcqa_eval/eval_medmcqa.py", line 90, in load_tokenizer_and_model
+    tokenizer = AutoTokenizer.from_pretrained(
+        tokenizer_path,
+        local_files_only=bool(loading_cfg.get("local_files_only", True)),
+        trust_remote_code=bool(loading_cfg.get("trust_remote_code", False)),
+    )
+  File "/home/jie018/miniconda3/envs/finetune/lib/python3.13/site-packages/transformers/models/auto/tokenization_auto.py", line 1175, in from_pretrained
+    return tokenizer_class_fast.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jie018/miniconda3/envs/finetune/lib/python3.13/site-packages/transformers/tokenization_utils_base.py", line 2113, in from_pretrained
+    return cls._from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~^
+        resolved_vocab_files,
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/jie018/miniconda3/envs/finetune/lib/python3.13/site-packages/transformers/tokenization_utils_base.py", line 2151, in _from_pretrained
+    slow_tokenizer = (cls.slow_tokenizer_class)._from_pretrained(
+        copy.deepcopy(resolved_vocab_files),
+    ...<7 lines>...
+        **(copy.deepcopy(kwargs)),
+    )
+  File "/home/jie018/miniconda3/envs/finetune/lib/python3.13/site-packages/transformers/tokenization_utils_base.py", line 2359, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+  File "/home/jie018/miniconda3/envs/finetune/lib/python3.13/site-packages/transformers/models/gemma/tokenization_gemma.py", line 120, in __init__
+    self.sp_model.Load(vocab_file)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/jie018/miniconda3/envs/finetune/lib/python3.13/site-packages/sentencepiece/__init__.py", line 961, in Load
+    return self.LoadFromFile(model_file)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/jie018/miniconda3/envs/finetune/lib/python3.13/site-packages/sentencepiece/__init__.py", line 316, in LoadFromFile
+    return _sentencepiece.SentencePieceProcessor_LoadFromFile(self, arg)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: not a string

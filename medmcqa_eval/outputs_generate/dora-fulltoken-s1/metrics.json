@@ -1,0 +1,173 @@
+{
+  "total": 4183,
+  "answered": 4172,
+  "unparsed": 11,
+  "correct": 1682,
+  "accuracy": 0.4021037532871145,
+  "accuracy_answered_only": 0.4031639501438159,
+  "precision_macro": 0.44229128221362835,
+  "recall_macro": 0.35889972228179373,
+  "f1_macro": 0.34257304180437437,
+  "precision_weighted": 0.44065999481082313,
+  "recall_weighted": 0.4021037532871145,
+  "f1_weighted": 0.3597564166774577,
+  "per_class": {
+    "A": {
+      "precision": 0.3794534763057765,
+      "recall": 0.8137982195845698,
+      "f1": 0.5175748997405047,
+      "support": 1348,
+      "tp": 1097,
+      "fp": 1794,
+      "fn": 251
+    },
+    "B": {
+      "precision": 0.5182481751824818,
+      "recall": 0.19631336405529953,
+      "f1": 0.28475935828877,
+      "support": 1085,
+      "tp": 213,
+      "fp": 198,
+      "fn": 872
+    },
+    "C": {
+      "precision": 0.5052083333333334,
+      "recall": 0.20972972972972972,
+      "f1": 0.2964094728800611,
+      "support": 925,
+      "tp": 194,
+      "fp": 190,
+      "fn": 731
+    },
+    "D": {
+      "precision": 0.3662551440329218,
+      "recall": 0.21575757575757576,
+      "f1": 0.27154843630816167,
+      "support": 825,
+      "tp": 178,
+      "fp": 308,
+      "fn": 647
+    }
+  },
+  "by_subject_name": {
+    "Physiology": {
+      "total": 171,
+      "correct": 73,
+      "accuracy": 0.4269005847953216
+    },
+    "Medicine": {
+      "total": 295,
+      "correct": 110,
+      "accuracy": 0.3728813559322034
+    },
+    "Biochemistry": {
+      "total": 171,
+      "correct": 87,
+      "accuracy": 0.5087719298245614
+    },
+    "Ophthalmology": {
+      "total": 58,
+      "correct": 25,
+      "accuracy": 0.43103448275862066
+    },
+    "Anatomy": {
+      "total": 234,
+      "correct": 91,
+      "accuracy": 0.3888888888888889
+    },
+    "Pediatrics": {
+      "total": 234,
+      "correct": 82,
+      "accuracy": 0.3504273504273504
+    },
+    "Pathology": {
+      "total": 337,
+      "correct": 131,
+      "accuracy": 0.3887240356083086
+    },
+    "Dental": {
+      "total": 1318,
+      "correct": 544,
+      "accuracy": 0.41274658573596357
+    },
+    "Microbiology": {
+      "total": 122,
+      "correct": 40,
+      "accuracy": 0.32786885245901637
+    },
+    "Anaesthesia": {
+      "total": 34,
+      "correct": 15,
+      "accuracy": 0.4411764705882353
+    },
+    "Radiology": {
+      "total": 69,
+      "correct": 30,
+      "accuracy": 0.43478260869565216
+    },
+    "Gynaecology & Obstetrics": {
+      "total": 224,
+      "correct": 77,
+      "accuracy": 0.34375
+    },
+    "Pharmacology": {
+      "total": 243,
+      "correct": 112,
+      "accuracy": 0.4609053497942387
+    },
+    "Social & Preventive Medicine": {
+      "total": 129,
+      "correct": 50,
+      "accuracy": 0.3875968992248062
+    },
+    "ENT": {
+      "total": 53,
+      "correct": 27,
+      "accuracy": 0.5094339622641509
+    },
+    "Surgery": {
+      "total": 369,
+      "correct": 142,
+      "accuracy": 0.38482384823848237
+    },
+    "Forensic Medicine": {
+      "total": 67,
+      "correct": 31,
+      "accuracy": 0.4626865671641791
+    },
+    "Psychiatry": {
+      "total": 16,
+      "correct": 5,
+      "accuracy": 0.3125
+    },
+    "Skin": {
+      "total": 17,
+      "correct": 4,
+      "accuracy": 0.23529411764705882
+    },
+    "Orthopaedics": {
+      "total": 20,
+      "correct": 5,
+      "accuracy": 0.25
+    },
+    "Unknown": {
+      "total": 2,
+      "correct": 1,
+      "accuracy": 0.5
+    }
+  },
+  "by_choice_type": {
+    "multi": {
+      "total": 1367,
+      "correct": 509,
+      "accuracy": 0.3723482077542063
+    },
+    "single": {
+      "total": 2816,
+      "correct": 1173,
+      "accuracy": 0.41654829545454547
+    }
+  },
+  "model_name": "dora-fulltoken-s1",
+  "predictions_path": "outputs_generate/dora-fulltoken-s1/predictions.jsonl"
+}

@@ -1,0 +1,11 @@
+model_name: gemma-3-4b-it
+predictions: outputs/gemma-3-4b-it/predictions.jsonl
+metrics: outputs/gemma-3-4b-it/metrics.json
+accuracy: 0.423619 (1772/4183)
+precision_macro: 0.425487
+recall_macro: 0.395643
+f1_macro: 0.391774
+precision_weighted: 0.427637
+recall_weighted: 0.423619
+f1_weighted: 0.404683
+unparsed: 0

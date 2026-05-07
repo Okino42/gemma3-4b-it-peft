@@ -1,0 +1,11 @@
+model_name: gemma-3-4b-med-dora-s1
+predictions: outputs/gemma-3-4b-med-dora-s1/predictions.jsonl
+metrics: outputs/gemma-3-4b-med-dora-s1/metrics.json
+accuracy: 0.419077 (1753/4183)
+precision_macro: 0.428841
+recall_macro: 0.388516
+f1_macro: 0.384250
+precision_weighted: 0.429418
+recall_weighted: 0.419077
+f1_weighted: 0.397782
+unparsed: 0

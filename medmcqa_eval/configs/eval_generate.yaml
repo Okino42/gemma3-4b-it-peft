@@ -1,0 +1,48 @@
+dataset:
+  name: openlifescienceai/medmcqa
+  split: validation
+  parquet_path: data/validation-00000-of-00001.parquet
+
+fields:
+  id: id
+  question: question
+  options:
+    A: opa
+    B: opb
+    C: opc
+    D: opd
+  label: cop
+  choice_type: choice_type
+  explanation: exp
+  subject: subject_name
+  topic: topic_name
+
+prompt:
+  system: "You are a careful medical exam assistant. Choose the single best answer from the given options."
+  answer_format: "Answer with only one letter: A, B, C, or D."
+
+model_loading:
+  local_files_only: true
+  trust_remote_code: false
+  attn_implementation: sdpa
+  device_map: auto
+  torch_dtype: bfloat16
+  use_4bit: false
+  bnb_4bit_quant_type: nf4
+  bnb_4bit_compute_dtype: bfloat16
+  bnb_4bit_use_double_quant: true
+
+generation:
+  method: generate
+  batch_size: 8
+  max_input_length: 2048
+  max_new_tokens: 8
+  do_sample: false
+  temperature: null
+  top_p: null
+
+outputs:
+  output_dir: outputs_generate
+  results_dir: results_generate
+  predictions_filename: predictions.jsonl
+  metrics_filename: metrics.json

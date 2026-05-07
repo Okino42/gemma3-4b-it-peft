@@ -1,0 +1,57 @@
+base_model_path: /projects/checkpoint/gemma-3-4b-it
+
+models:
+  - name: gemma-3-4b-it
+    type: base
+    model_path: /projects/checkpoint/gemma-3-4b-it
+    adapter_path: null
+
+  - name: lora-fulltoken-s1
+    type: lora
+    model_path: /projects/checkpoint/gemma-3-4b-it
+    adapter_path: /projects/checkpoint/lora-fulltoken/s1
+
+  - name: lora-fulltoken-s2
+    type: lora
+    model_path: /projects/checkpoint/gemma-3-4b-it
+    adapter_path: /projects/checkpoint/lora-fulltoken/s2
+
+  - name: dora-fulltoken-s1
+    type: dora
+    model_path: /projects/checkpoint/gemma-3-4b-it
+    adapter_path: /projects/checkpoint/dora-fulltoken/s1
+
+  - name: dora-fulltoken-s2
+    type: dora
+    model_path: /projects/checkpoint/gemma-3-4b-it
+    adapter_path: /projects/checkpoint/dora-fulltoken/s2
+
+  - name: gemma-3-4b-med-lora-s1
+    type: lora
+    model_path: /projects/checkpoint/gemma-3-4b-it
+    adapter_path: /projects/checkpoint/gemma-3-4b-med-lora/gemma-3-4b-med-lora-s1
+
+  - name: gemma-3-4b-med-lora-s2
+    type: lora
+    model_path: /projects/checkpoint/gemma-3-4b-it
+    adapter_path: /projects/checkpoint/gemma-3-4b-med-lora/gemma-3-4b-med-lora-s2
+
+  - name: gemma-3-4b-med-lora-newdata-r16
+    type: lora
+    model_path: /projects/checkpoint/gemma-3-4b-it
+    adapter_path: /projects/checkpoint/gemma-3-4b-med-lora/gemma-3-4b-med-lora-newdata-r16
+
+  - name: gemma-3-4b-med-lora-newdata-r32
+    type: lora
+    model_path: /projects/checkpoint/gemma-3-4b-it
+    adapter_path: /projects/checkpoint/gemma-3-4b-med-lora/gemma-3-4b-med-lora-newdata-r32
+
+  - name: gemma-3-4b-med-dora-s1
+    type: dora
+    model_path: /projects/checkpoint/gemma-3-4b-it
+    adapter_path: /projects/checkpoint/gemma-3-4b-med-dora-s1
+
+  - name: gemma-3-4b-med-dora-s2
+    type: dora
+    model_path: /projects/checkpoint/gemma-3-4b-it
+    adapter_path: /projects/checkpoint/gemma-3-4b-med-dora-s2

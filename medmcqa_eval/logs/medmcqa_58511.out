@@ -1,0 +1,5 @@
+model_name: gemma-3-4b-it
+predictions: outputs/gemma-3-4b-it/predictions.jsonl
+metrics: outputs/gemma-3-4b-it/metrics.json
+accuracy: 0.420990 (1761/4183)
+unparsed: 0

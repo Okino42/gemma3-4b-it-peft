@@ -1,0 +1,203 @@
+{
+  "total": 4183,
+  "answered": 4183,
+  "unparsed": 0,
+  "correct": 1772,
+  "accuracy": 0.4236194119053311,
+  "accuracy_answered_only": 0.4236194119053311,
+  "precision_macro": 0.4507714815634932,
+  "recall_macro": 0.3883898109764387,
+  "f1_macro": 0.3797444454533492,
+  "precision_weighted": 0.4483204909653694,
+  "recall_weighted": 0.4236194119053311,
+  "f1_weighted": 0.3936599946619786,
+  "per_class": {
+    "A": {
+      "precision": 0.40178225493994574,
+      "recall": 0.7692878338278932,
+      "f1": 0.5278696869432425,
+      "support": 1348,
+      "tp": 1037,
+      "fp": 1544,
+      "fn": 311
+    },
+    "B": {
+      "precision": 0.4850615114235501,
+      "recall": 0.2543778801843318,
+      "f1": 0.3337363966142684,
+      "support": 1085,
+      "tp": 276,
+      "fp": 293,
+      "fn": 809
+    },
+    "C": {
+      "precision": 0.5153061224489796,
+      "recall": 0.21837837837837837,
+      "f1": 0.3067577828397874,
+      "support": 925,
+      "tp": 202,
+      "fp": 190,
+      "fn": 723
+    },
+    "D": {
+      "precision": 0.40093603744149764,
+      "recall": 0.3115151515151515,
+      "f1": 0.3506139154160982,
+      "support": 825,
+      "tp": 257,
+      "fp": 384,
+      "fn": 568
+    }
+  },
+  "confusion_matrix": {
+    "A": {
+      "A": 1037,
+      "B": 116,
+      "C": 77,
+      "D": 118,
+      "UNPARSED": 0
+    },
+    "B": {
+      "A": 608,
+      "B": 276,
+      "C": 62,
+      "D": 139,
+      "UNPARSED": 0
+    },
+    "C": {
+      "A": 490,
+      "B": 106,
+      "C": 202,
+      "D": 127,
+      "UNPARSED": 0
+    },
+    "D": {
+      "A": 446,
+      "B": 71,
+      "C": 51,
+      "D": 257,
+      "UNPARSED": 0
+    }
+  },
+  "by_subject_name": {
+    "Physiology": {
+      "total": 171,
+      "correct": 84,
+      "accuracy": 0.49122807017543857
+    },
+    "Medicine": {
+      "total": 295,
+      "correct": 126,
+      "accuracy": 0.4271186440677966
+    },
+    "Biochemistry": {
+      "total": 171,
+      "correct": 76,
+      "accuracy": 0.4444444444444444
+    },
+    "Ophthalmology": {
+      "total": 58,
+      "correct": 22,
+      "accuracy": 0.3793103448275862
+    },
+    "Anatomy": {
+      "total": 234,
+      "correct": 102,
+      "accuracy": 0.4358974358974359
+    },
+    "Pediatrics": {
+      "total": 234,
+      "correct": 87,
+      "accuracy": 0.3717948717948718
+    },
+    "Pathology": {
+      "total": 337,
+      "correct": 157,
+      "accuracy": 0.4658753709198813
+    },
+    "Dental": {
+      "total": 1318,
+      "correct": 531,
+      "accuracy": 0.40288315629742033
+    },
+    "Microbiology": {
+      "total": 122,
+      "correct": 53,
+      "accuracy": 0.4344262295081967
+    },
+    "Anaesthesia": {
+      "total": 34,
+      "correct": 14,
+      "accuracy": 0.4117647058823529
+    },
+    "Radiology": {
+      "total": 69,
+      "correct": 32,
+      "accuracy": 0.463768115942029
+    },
+    "Gynaecology & Obstetrics": {
+      "total": 224,
+      "correct": 99,
+      "accuracy": 0.4419642857142857
+    },
+    "Pharmacology": {
+      "total": 243,
+      "correct": 108,
+      "accuracy": 0.4444444444444444
+    },
+    "Social & Preventive Medicine": {
+      "total": 129,
+      "correct": 59,
+      "accuracy": 0.4573643410852713
+    },
+    "ENT": {
+      "total": 53,
+      "correct": 26,
+      "accuracy": 0.49056603773584906
+    },
+    "Surgery": {
+      "total": 369,
+      "correct": 151,
+      "accuracy": 0.4092140921409214
+    },
+    "Forensic Medicine": {
+      "total": 67,
+      "correct": 28,
+      "accuracy": 0.417910447761194
+    },
+    "Psychiatry": {
+      "total": 16,
+      "correct": 7,
+      "accuracy": 0.4375
+    },
+    "Skin": {
+      "total": 17,
+      "correct": 5,
+      "accuracy": 0.29411764705882354
+    },
+    "Orthopaedics": {
+      "total": 20,
+      "correct": 4,
+      "accuracy": 0.2
+    },
+    "Unknown": {
+      "total": 2,
+      "correct": 1,
+      "accuracy": 0.5
+    }
+  },
+  "by_choice_type": {
+    "multi": {
+      "total": 1367,
+      "correct": 551,
+      "accuracy": 0.40307242136064375
+    },
+    "single": {
+      "total": 2816,
+      "correct": 1221,
+      "accuracy": 0.43359375
+    }
+  },
+  "model_name": "gemma-3-4b-med-lora-s1",
+  "predictions_path": "outputs/gemma-3-4b-med-lora-s1/predictions.jsonl"
+}

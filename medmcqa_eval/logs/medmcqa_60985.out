@@ -1,0 +1,11 @@
+model_name: dora-fulltoken-s2
+predictions: outputs/dora-fulltoken-s2/predictions.jsonl
+metrics: outputs/dora-fulltoken-s2/metrics.json
+accuracy: 0.406646 (1701/4183)
+precision_macro: 0.443695
+recall_macro: 0.365783
+f1_macro: 0.351865
+precision_weighted: 0.441872
+recall_weighted: 0.406646
+f1_weighted: 0.367643
+unparsed: 0
